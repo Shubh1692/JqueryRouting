@@ -43,8 +43,6 @@ $(function() {
         }
     }
     /** Function for call after any hash url change
-		input : null
-		output : null
 	*/
     function _onhashchange() {
         _findRouteTemplateUrl(location.hash);
@@ -53,7 +51,6 @@ $(function() {
     $(window).on("hashchange", _onhashchange);
     // call onload function on window for first time
     $('#body').ready(function() {
-        alert(location.hash)
         _findRouteTemplateUrl(location.hash);
     });
 });
